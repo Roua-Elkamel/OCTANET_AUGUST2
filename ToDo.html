@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <header>
+    <nav class="container">
+        <div class="logo">
+            <img src="to-do-logo.png" alt="to do logo">
+            <p>To Do List</p>
+        </div>
+        <ul>
+            <a href="ToDo.html">
+                <li>Home</li>
+            </a>
+            <a href="main">
+                <li>Contacts</li>
+            </a>
+            <a id="sign-in-link" href="#">
+                <li>Sign In</li>
+            </a>
+        </ul>
+    </nav>
+   </header>
+
+   <div class="main">
+        <div class="content">
+            <div class="container">
+                <div class="todo">
+                    <input id="task-input" class="todo-value" placeholder="Enter a task" type="text">
+                    <button id="add-task">Add Task</button>
+                </div>
+                <ul id="task-list">
+                    <!-- Tasks will be dynamically added here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sign In Form -->
+    <div id="sign-in-form" class="sign-in">
+        <h2>Sign In</h2>
+        <form id="sign-in-form-element">
+            <label for="first-name">First Name:</label>
+            <input id="first-name" type="text" name="first-name" required>
+            <label for="last-name">Last Name:</label>
+            <input id="last-name" type="text" name="last-name" required>
+            <label for="email">Email:</label>
+            <input id="email" type="email" name="email" required>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
